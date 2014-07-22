@@ -9,6 +9,17 @@ To use it, Network Activate it and then go to Settings -> Network Menu.
 
 You'll see a list of your subsites, with a checkbox to enable or disable that subsite in the menu. There is also a field to set the menu label. 
 
+## Implementation
+
+Once you've configured it, just drop this somewhere:
+```php
+wp_nav_menu( array('menu' => 'network_subsite_menu') );
+```
+
+In reality, the plugin doesn't really use `wp_nav_menu`, so you're going to be pretty dissappointed if you try to pass other options.  It's building out the menu manually, using the standard WordPress nav menu HTML and then circumventing the whole nav menu function by directly returning the output.
+
+The only parameter that will work is `echo`.
+
 ## Filters
 
 If you need anything beyond the basics, these filters should get you there in theory:
