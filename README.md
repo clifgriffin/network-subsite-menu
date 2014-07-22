@@ -3,7 +3,7 @@ Network Subsite Menu
 
 Posted in case anyone finds it useful.  This is definitely a scratch your own niche (get it??) kind of plugin.
 
-Basically, if you havea  multisite and you want to create a global menu with some or all of your subsites so you can show which subsite you're on, this will help you build that menu. 
+Basically, if you have a multisite and you want to create a global menu with some or all of your subsites and show which subsite you're on, this will help you build that menu. 
 
 To use it, Network Activate it and then go to Settings -> Network Menu.
 
