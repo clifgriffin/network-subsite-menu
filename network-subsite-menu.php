@@ -2,7 +2,7 @@
 /*
 Plugin Name: Network Subsite Menu
 Description:  Show a menu with the network subsites.
-Version: 1.0.0
+Version: 1.0.1
 Author: CGD Inc.
 Author URI: http://cgd.io
 
@@ -67,8 +67,7 @@ class CGD_NetworkSubsiteMenu extends WordPress_SimpleSettings {
 				// Set current
 				$site_info->current = false;
 				if ( $blog_id == $site_id ) {
-					$site_info->current = true;
-					$current_already_set = true; // only set one menu item as current
+					$site_info->current = true;					
 				}
 				
 				// Allow for extensibility
@@ -80,6 +79,10 @@ class CGD_NetworkSubsiteMenu extends WordPress_SimpleSettings {
 				}
 				
 				$result .= "<li id='menu-item-$site_id' class='menu-item menu-item-type-network-subsite menu-item-$site_id $class'><a href='{$site_info->siteurl}'>$site_info->blogname</a></li>";
+				
+				if ( $site_info->current ) {
+					$current_already_set = true; // only set one menu item as current
+				}
 			}
 			
 			$result .= apply_filters('cgd_network_subsite_menu_after', '');
