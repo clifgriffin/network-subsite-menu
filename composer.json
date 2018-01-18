@@ -2,6 +2,7 @@
   "name": "objectivco/network-subsite-menu",
   "type": "wordpress-plugin",
   "require": {
-    "composer/installers": "1.5.*"
+    "composer/installers": "1.5.*",
+    "objectivco/wordpress-simple-settings": "^0.5.0"
   }
 }
