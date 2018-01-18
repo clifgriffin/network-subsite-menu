@@ -1,4 +1,7 @@
 {
   "name": "objectivco/network-subsite-menu",
-  "type": "wordpress-plugin"
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "v1.2.4"
+  }
 }
