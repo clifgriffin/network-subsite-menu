@@ -123,23 +123,23 @@
     },
     {
         "name": "objectivco/wordpress-simple-settings",
-        "version": "0.5.0",
-        "version_normalized": "0.5.0.0",
+        "version": "0.6.0",
+        "version_normalized": "0.6.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Objectivco/wordpress-simple-settings.git",
-            "reference": "d4c80f46e420a214fcb4b3c5c4345da1c5d8191b"
+            "reference": "948f014e8a40c33109e3d8f95e0c8c3709d6c21a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Objectivco/wordpress-simple-settings/zipball/d4c80f46e420a214fcb4b3c5c4345da1c5d8191b",
-            "reference": "d4c80f46e420a214fcb4b3c5c4345da1c5d8191b",
+            "url": "https://api.github.com/repos/Objectivco/wordpress-simple-settings/zipball/948f014e8a40c33109e3d8f95e0c8c3709d6c21a",
+            "reference": "948f014e8a40c33109e3d8f95e0c8c3709d6c21a",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.0"
         },
-        "time": "2017-10-19 16:46:17",
+        "time": "2018-01-18 21:07:10",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

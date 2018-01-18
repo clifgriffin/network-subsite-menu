@@ -3,6 +3,6 @@
   "type": "wordpress-plugin",
   "require": {
     "composer/installers": "1.5.*",
-    "objectivco/wordpress-simple-settings": "^0.5.0"
+    "objectivco/wordpress-simple-settings": "^0.6.0"
   }
 }
