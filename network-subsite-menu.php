@@ -24,8 +24,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
-if ( ! class_exists('WordPress_SimpleSettings') )
-	require('lib/wordpress-simple-settings.php');
+/**
+ * Composer Include
+ */
+require dirname( __FILE__ ) . '/vendor/autoload.php';
 
 class CGD_NetworkSubsiteMenu extends WordPress_SimpleSettings {
 	var $prefix = '_cgdnm';
