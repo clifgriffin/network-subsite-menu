@@ -2,9 +2,9 @@
 /*
 Plugin Name: Network Subsite Menu
 Description:  Show a menu with the network subsites.
-Version: 1.1.0
-Author: CGD Inc.
-Author URI: http://cgd.io
+Version: 1.1.1
+Author: Objectiv
+Author URI: http://objectiv.co
 
 ------------------------------------------------------------------------
 Copyright 2009-2014 Clif Griffin Development Inc.
@@ -208,14 +208,14 @@ class CGD_NetworkSubsiteMenu extends WordPress_SimpleSettings {
 
 									<p>
 										<label>
-											<input type="text" name="<?php echo $this->get_field_name('site_settings'); ?>[labels][<?php echo $s['blog_id']; ?>]; ?>" value="<?php if ( isset($menu_settings['labels'][$s['blog_id']]) ) echo $menu_settings['labels'][$s['blog_id']]; ?>" /><br/>
+											<input type="text" name="<?php echo $this->get_field_name('site_settings'); ?>[labels][<?php echo $s['blog_id']; ?>]; ?>" value="<?php if ( isset($menu_settings['labels'][$s['blog_id']]) ) echo htmlspecialchars( $menu_settings['labels'][$s['blog_id']] ); ?>" /><br/>
 											Menu label for <?php echo $s['blogname']; ?> entry.
 										</label>
 									</p>
 
 									<p>
 										<label>
-											<input type="text" name="<?php echo $this->get_field_name('site_settings'); ?>[mobile_labels][<?php echo $s['blog_id']; ?>]; ?>" value="<?php if ( isset($menu_settings['mobile_labels'][$s['blog_id']]) ) echo $menu_settings['mobile_labels'][$s['blog_id']]; ?>" /><br/>
+											<input type="text" name="<?php echo $this->get_field_name('site_settings'); ?>[mobile_labels][<?php echo $s['blog_id']; ?>]; ?>" value="<?php if ( isset($menu_settings['mobile_labels'][$s['blog_id']]) ) echo htmlspecialchars( $menu_settings['mobile_labels'][$s['blog_id']] ); ?>" /><br/>
 											Mobile Menu label for <?php echo $s['blogname']; ?> entry. (Default: Desktop label)
 										</label>
 									</p>
